@@ -1,10 +1,16 @@
 import React, { Component } from "react";
-import { AppRegistry, Text } from "react-native";
-import Header from "./src/components/header";
+import { AppRegistry, Text, View } from "react-native";
+import Header from "./src/components/Header";
+import AlbumList from "./src/components/AlbumList";
 
 export default class App extends Component {
     render() {
-        return <Header headerText={"Albums"} />;
+        return (
+            <View>
+                <Header headerText={"Albums"} />
+                <AlbumList />
+            </View>
+        );
     }
 }
 
